@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NextGen Corporation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <svg class="loader-logo-svg" viewBox="0 0 60 60" fill="none">
+      <polygon points="30,3 55,17 55,43 30,57 5,43 5,17" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+      <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#c9a96e" font-size="13" font-family="DM Sans" font-weight="500" letter-spacing="1">NG</text>
+    </svg>
+    <p class="loader-text">NextGen Corporation</p>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="mainHeader">
+  <a href="index.html" class="logo"><span>Next</span>Gen <em>Corporation</em></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format&fit=crop')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80&auto=format&fit=crop')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=1600&q=80&auto=format&fit=crop')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-tag">Consulting &amp; Professional Services</p>
+    <h1>NextGen<br><span>Corporation</span></h1>
+    <p class="hero-sub">Transforming industries through strategy,<br>technology and vision.</p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="scrollToSection()">Explore Services</button>
+      <a href="#about" class="btn-ghost">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+  <div class="slide-dots" id="slideDots"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <p class="section-eyebrow">Who We Are</p>
+      <h2 class="section-heading">Built to Lead.<br>Designed to Deliver.</h2>
+      <p>NextGen Corporation is a multi-disciplinary consulting powerhouse operating across healthcare, information technology, education, and business infrastructure.</p>
+      <p>We partner with organisations to design, build and scale solutions that matter — from hospital systems to smart classrooms.</p>
+      <a href="#services" class="inline-link">See our services →</a>
+    </div>
+    <div class="about-visual fade-in">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&auto=format&fit=crop" alt="Team at work">
+        <div class="about-badge">
+          <strong>5+</strong>
+          <span>Years of Vision</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat fade-in">
+      <h2 class="counter" data-target="50">0</h2>
+      <p>Projects Delivered</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat fade-in">
+      <h2 class="counter" data-target="20">0</h2>
+      <p>Happy Clients</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat fade-in">
+      <h2 class="counter" data-target="10">0</h2>
+      <p>Industries Served</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat fade-in">
+      <h2 class="counter" data-target="5">0</h2>
+      <p>Years of Vision</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="section-header fade-in">
+    <p class="section-eyebrow">What We Do</p>
+    <h2 class="section-heading">Our Services</h2>
+  </div>
+  <div class="service-container">
+    <a href="healthcare.html" class="service-box fade-in">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M20 6v28M6 20h28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><rect x="3" y="3" width="34" height="34" rx="6" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Healthcare</h3>
+      <p>Medical equipment, hospital systems and clinical consulting for modern healthcare providers.</p>
+      <span class="service-link">Learn more →</span>
+    </a>
+    <a href="it.html" class="service-box fade-in">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 40 40" fill="none"><rect x="3" y="7" width="34" height="22" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M14 33h12M20 29v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10 18l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>IT Services</h3>
+      <p>Software development, cybersecurity and cloud infrastructure tailored to your business needs.</p>
+      <span class="service-link">Learn more →</span>
+    </a>
+    <a href="education.html" class="service-box fade-in">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M20 6L36 14l-16 8L4 14 20 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 17v9c0 2.8 4.5 5 10 5s10-2.2 10-5v-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Education</h3>
+      <p>Smart classrooms, e-learning platforms and educational consulting that transforms how people learn.</p>
+      <span class="service-link">Learn more →</span>
+    </a>
+    <a href="business.html" class="service-box fade-in">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 40 40" fill="none"><rect x="3" y="10" width="34" height="26" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M14 10V7a6 6 0 0112 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M3 20h34" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Business Infrastructure</h3>
+      <p>Office furniture, workspace planning and essential infrastructure for the modern enterprise.</p>
+      <span class="service-link">Learn more →</span>
+    </a>
+  </div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax">
+  <div class="parallax-overlay"></div>
+  <div class="parallax-content fade-in">
+    <p class="section-eyebrow" style="color:var(--gold-light)">Our Promise</p>
+    <h2>Delivering Modern Solutions<br>for Tomorrow's Challenges</h2>
+    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="section-header fade-in">
+    <p class="section-eyebrow">Reach Out</p>
+    <h2 class="section-heading">Contact Us</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-details fade-in">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <p class="contact-label">Phone</p>
+          <p class="contact-value">+91 9811561181</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <p class="contact-label">Email</p>
+          <p class="contact-value">nextgencorp@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <div>
+          <p class="contact-label">Address</p>
+          <p class="contact-value">Delhi, India</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-map fade-in">
+      <iframe src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="340" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <p class="footer-logo"><span>Next</span>Gen <em>Corporation</em></p>
+      <p>Professional consulting services across industries, delivering lasting impact through expertise and innovation.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="healthcare.html">Healthcare</a>
+      <a href="it.html">IT Services</a>
+      <a href="education.html">Education</a>
+      <a href="business.html">Business Infrastructure</a>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <p>+91 9811561181</p>
+      <p>nextgencorp@gmail.com</p>
+      <p>Delhi, India</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 NextGen Corporation. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
